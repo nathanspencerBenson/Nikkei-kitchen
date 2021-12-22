@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.Home {
+  border: 2px solid black;
+  height: 90vh;
+  background-size: cover;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+.img {
+  background: linear-gradient(to top, #03030377, #00000098),
+    url("../../HomePage7.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

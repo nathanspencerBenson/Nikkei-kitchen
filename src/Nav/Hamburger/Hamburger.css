@@ -1,0 +1,48 @@
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  position: absolute;
+  right: 20px;
+  overflow: visible;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger.hidden {
+  display: none;
+}
+
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.burger.burger1 {
+  transform: rotate(45deg);
+  background-color: white;
+}
+
+.burger.burger2 {
+  transform: translate(100%);
+  opacity: 0;
+}
+
+.hamburger:hover .burgerHover {
+  transform: translate(-50%);
+  background-color: white;
+}
+
+.burger.burger3 {
+  transform: rotate(-45deg);
+  background-color: white;
+}
