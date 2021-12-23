@@ -5,24 +5,32 @@ import MenuItem from './MenuItem/MenuItem';
 function Menu() {
 
     const [ menuItems, setMenuItems ] = useState([]);
+    const [ foodItems, setFoodItems ] = useState([]);
+    const [ drinkItems, setDrinkItems ] = useState([]);
+
 
     useEffect(() => {
         client.getEntries()
         .then((response) => {
-            console.log(response.items);
            setMenuItems(response.items)
-           menuItems.map(item => {
-            //    console.log(item.sys.contentType.sys.id)
-            console.log(item)
-           })
+           filterMenuItemsAndPlaceInArray('drink', setDrinkItems)
+           filterMenuItemsAndPlaceInArray('foodItem', setFoodItems)
+           console.log(drinkItems)
+          
         })
         .catch(console.error)
       }, []);
 
-// var newArray = array.filter(function(item)
-//  {
-//   return conditional_statement;
-//  });
+      const filterMenuItemsAndPlaceInArray = (itemType, array) => {
+        var newArray = menuItems.filter(function(item)
+            {
+                return item.sys.contentType.sys.id == itemType;
+            });
+        array(newArray);
+        
+      };
+
+
 
     return (
         <div>
