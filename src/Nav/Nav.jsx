@@ -13,7 +13,6 @@ function Nav() {
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
-        console.log("hamburger")
     };
 
     return (
@@ -24,19 +23,19 @@ function Nav() {
             <div className={`side-menu ${!hamburgerOpen ? 'hidden' : ''}`}>
                 <img src={sideMenuImg}></img>
                 <ul className={'menu'}>
-                    <li>
-                        <Link to="/menu">HOME</Link>
+                    <li onClick={toggleHamburger}>
+                        <Link to="/">HOME</Link>
                     </li>
-                    <li>
+                    <li onClick={toggleHamburger}>
                         <Link to="/menu">MENU</Link>
                     </li>
-                    <li>
+                    <li onClick={toggleHamburger}>
                         <Link to="/delivery">DELIVERY</Link>
                     </li>
-                    <li>
+                    <li onClick={toggleHamburger}>
                         <Link to="/contact">CONTACT</Link>
                     </li>
-                    <li>
+                    <li onClick={toggleHamburger}>
                         <Link to="/reserve">RESERVE</Link>
                     </li>
 
