@@ -9,18 +9,27 @@ function Menu() {
     useEffect(() => {
         client.getEntries()
         .then((response) => {
-            console.log(response);
+            console.log(response.items);
            setMenuItems(response.items)
+           menuItems.map(item => {
+            //    console.log(item.sys.contentType.sys.id)
+            console.log(item)
+           })
         })
         .catch(console.error)
       }, []);
+
+// var newArray = array.filter(function(item)
+//  {
+//   return conditional_statement;
+//  });
 
     return (
         <div>
 
             <p>Menu</p>
             {menuItems.map(((item, index) => 
-               ( <MenuItem key={index} name={item.fields.name} description={item.fields.description} price={item.fields.price} img={item.fields.featuredImage.fields.file.url}/>)
+               ( <MenuItem key={index} item={item}/>)
             ))}
         </div>
     )
