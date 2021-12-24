@@ -1,5 +1,27 @@
+.menu-item {
+  margin: 25px 0;
+  text-align: left;
+  width: 100%;
+}
+
 .menu-item > img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+}
+
+.menu-item h4,
+.price {
+  color: #fd6363;
+}
+
+.menu-item h4 {
+  font-size: 1.2em;
+  display: block;
+}
+
+.menu-item div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

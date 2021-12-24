@@ -4,7 +4,12 @@ nav {
   align-items: center;
   padding: 0 20px;
   height: 10vh;
+  width: 100vw;
   font-family: "Work Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 999;
 }
 
 nav > img {

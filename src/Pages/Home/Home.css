@@ -3,6 +3,7 @@
 .Home {
   border: 2px solid black;
   height: 90vh;
+  width: 100vw;
   background-size: cover;
   color: white;
   font-family: "Work Sans", sans-serif;

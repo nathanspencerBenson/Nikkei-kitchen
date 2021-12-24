@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Quicksand&family=Work+Sans&family=Yantramanav&display=swap");
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 50px 0;
+  border-left: 2px solid #fd6363;
+  border-right: 2px solid #fd6363;
+  padding: 10vh 2vw;
+  width: 90vw;
+}
+
+.Menu div:nth-child(1) {
+  text-align: center;
+}
+
+.menu-links {
+  display: flex;
+  list-style: none;
+}
+
+.menu-links a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-links a:hover {
+  text-decoration: underline;
+}
+
+/* .Menu > div div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.Menu img {
+  max-width: 30vw;
+  max-height: 40vh;
+}
+
+h1,
+h2,
+h3 {
+  color: #fd6363;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: "Miniver", cursive;
+  margin-top: 5vh;
+}
+
+.menu_drinks,
+.menu_food {
+  display: flex;
+  width: 100%;
+}
+
+.menu_food div:nth-child(2) {
+  text-align: center;
+}
+
+.menu_drinks > div,
+.menu_food > div {
+  width: 50%;
+  padding: 0 5vw;
+}
+
+.container_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container_image > img:nth-child(1) {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+}
+
+.container_image > img:nth-child(2) {
+  position: absolute;
+  top: 35%;
+}
