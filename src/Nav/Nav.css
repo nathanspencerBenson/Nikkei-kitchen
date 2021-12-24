@@ -8,8 +8,13 @@ nav {
   font-family: "Work Sans", sans-serif;
   position: sticky;
   top: 0;
-  background: white;
+  background: transparent;
   z-index: 999;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
 nav > img {
@@ -21,23 +26,25 @@ nav > ul > img {
   padding: 10vh 0 10px 0;
 }
 
-nav > button {
-  margin-right: 10vw;
+nav button {
+  margin-right: 5vw;
   background-color: transparent;
   border: 4px solid black;
   padding: 1rem 2rem;
   transition: 0.5s;
+  width: 150px;
+  font-size: 1.1em;
 }
 
-nav > button:hover {
+nav button:hover {
   cursor: pointer;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
-nav > button:hover {
-  cursor: pointer;
-  border-style: groove;
+nav button:hover > a {
+  color: white;
 }
 
 .side-menu.hidden {
@@ -47,6 +54,7 @@ nav > button:hover {
 .side-menu {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   list-style: none;
   height: 100vh;
   width: 100vw;
@@ -61,6 +69,8 @@ nav > button:hover {
 }
 
 .side-menu > img {
+  min-width: 50vw;
+  min-height: 100vh;
   max-width: 60vw;
 }
 .side-menu > ul {

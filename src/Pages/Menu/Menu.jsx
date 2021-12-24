@@ -12,6 +12,7 @@ import pattern from '../../ Images/pattern.jpeg';
 import pattern2 from '../../ Images/pattern4.jpeg';
 
 import './Menu.css';
+import Nav from '../../Nav/Nav';
 
 function Menu() {
 
@@ -45,14 +46,15 @@ function Menu() {
 
 
       if (menuItems.length === 0) {
-        return <div> <h1>LOADING..</h1></div>
+        return <div> <h1>LOADING...</h1></div>
       }
     
     return (
        
       
         <div className="Menu">
-            <div>
+            <Nav classname={'navMenu'} />
+            <div className="menu_header">
                 <h3>Food & Drinks</h3>
                 <h1>MENU</h1>
                 <p>Peruvian restaurant with a focus on Nikkei</p>

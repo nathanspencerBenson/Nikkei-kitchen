@@ -7,7 +7,7 @@ import sideMenuImg from '../HomePage8.jpeg';
 
 import { GrInstagram, GrFacebook } from 'react-icons/gr';
 
-function Nav() {
+function Nav({ classname }) {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
@@ -16,9 +16,12 @@ function Nav() {
     };
 
     return (
-        <nav>
+        <nav className={classname}>
             <img src={Logo} />
-            <button>Reserve</button>
+            <div className="nav-buttons">
+                <Link to="/menu"><button>MENU</button></Link>
+                <Link to="/reserve"><button>RESERVE</button></Link>
+            </div>
             <Hamburger hamburgerOpen={hamburgerOpen} toggleHamburger={toggleHamburger} />
             <div className={`side-menu ${!hamburgerOpen ? 'hidden' : ''}`}>
                 <img src={sideMenuImg}></img>

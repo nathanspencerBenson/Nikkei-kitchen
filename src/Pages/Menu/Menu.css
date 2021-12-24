@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Miniver&family=Quicksand&family=Work+Sans&family=Yantramanav&display=swap");
-
+.navMenu {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
 .Menu {
   display: flex;
   flex-direction: column;
@@ -8,8 +12,12 @@
   padding: 50px 0;
   border-left: 2px solid #fd6363;
   border-right: 2px solid #fd6363;
-  padding: 10vh 2vw;
+  padding: 0 2vw;
   width: 90vw;
+}
+
+.menu_header {
+  text-align: center;
 }
 
 .Menu div:nth-child(1) {
@@ -45,17 +53,17 @@
   max-height: 40vh;
 }
 
-h1,
-h2,
-h3 {
+.Menu h1,
+.Menu h2,
+.Menu h3 {
   color: #fd6363;
 }
 
-h1 {
+.Menu h1 {
   font-size: 4em;
 }
 
-h2 {
+.Menu h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +71,7 @@ h2 {
   font-size: 2em;
 }
 
-h3 {
+.Menu h3 {
   font-family: "Miniver", cursive;
   margin-top: 5vh;
 }
