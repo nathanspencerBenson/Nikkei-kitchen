@@ -2,6 +2,7 @@
 .navMenu {
   position: sticky;
   top: 0;
+  width: 100vw;
   background-color: white;
 }
 .Menu {
@@ -13,7 +14,8 @@
   border-left: 2px solid #fd6363;
   border-right: 2px solid #fd6363;
   padding: 0 2vw;
-  width: 90vw;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .menu_header {

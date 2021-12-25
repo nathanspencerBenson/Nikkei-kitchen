@@ -22,6 +22,11 @@
   margin-bottom: 10px;
 }
 
+.Footer a {
+  text-decoration: none;
+  color: black;
+}
+
 #gmap_canvas {
   width: 30vw;
   height: 30vh;

@@ -23,8 +23,8 @@ function Footer() {
                 </div>
                 <div>
                     <p>FOLLOW US</p>
-                    <span><GrFacebook /> Facebook</span>&nbsp;&nbsp;
-                    <span><GrInstagram /> Instagram</span>
+                    <a href="https://www.facebook.com/Nikkei.Kitchen1/" target="_blank"><GrFacebook /> Facebook</a>&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/nikkei.kitchen/" target="_blank"><GrInstagram /> Instagram</a>
                 </div>
             </div>
             <p>	&copy; Nikkei Kitchen 2022</p>

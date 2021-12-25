@@ -17,7 +17,7 @@ function Nav({ classname }) {
 
     return (
         <nav className={classname}>
-            <img src={Logo} />
+            <Link to="/"><img className="logo" src={Logo} /></Link>
             <div className="nav-buttons">
                 <Link to="/menu"><button>MENU</button></Link>
                 <a href='https://www.thefork.de/?cc=56555-8ef&gclid=Cj0KCQiA_JWOBhDRARIsANymNObapWZTMGfaiqUYI-m1Lr6XBGjzmu_I-asGUH1no9NQ3PkF3tT-IrUaAqhLEALw_wcB&gclsrc=aw.ds' target='_blank'><button>RESERVE</button></a>
