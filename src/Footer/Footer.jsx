@@ -10,8 +10,11 @@ function Footer() {
             <img src={logo} />
             <div>
                 <div>
-                <p>Nikkei Kitchen <br />Herzogstraße 88 <br /> 80796 München <br /> Deutschland</p>
-                        <p>betriebsleitung@nikkei-kitchen.com <br /> 0176 88479259 <br /> www.nikkei.kitchen</p> 
+                    <p>Nikkei Kitchen</p> <p>
+                    Herzogstraße 88 <br /> 80796 München <br /> Deutschland</p>
+                    <p>betriebsleitung@nikkei-kitchen.com </p>
+                    <p> 0176 88479259</p> 
+                    <p> www.nikkei.kitchen</p> 
                 </div>
                 <div class="mapouter">
                     <div class="gmap_canvas">
@@ -19,7 +22,8 @@ function Footer() {
                     </div>
                 </div>
                 <div>
-                    <span><GrFacebook /> Facebook</span>
+                    <p>FOLLOW US</p>
+                    <span><GrFacebook /> Facebook</span>&nbsp;&nbsp;
                     <span><GrInstagram /> Instagram</span>
                 </div>
             </div>

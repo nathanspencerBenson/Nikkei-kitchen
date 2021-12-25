@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+.Footer p {
+  margin-bottom: 10px;
+}
+
 #gmap_canvas {
   width: 30vw;
   height: 30vh;

@@ -18,7 +18,8 @@ function Home() {
             <div className="landing-page">
                 <Nav classname={'navHome'}/>
                 <div className="Home_container"><p>	&ldquo; Step inside Nikkei Kitchen, a world where day blurs into night, <br></br> summer into winter, and food and drink are plenty &rdquo;</p>
-                    <Link to="/reserve"><button>RESERVE<IoIosArrowForward /></button></Link>
+                    <a href='https://www.thefork.de/?cc=56555-8ef&gclid=Cj0KCQiA_JWOBhDRARIsANymNObapWZTMGfaiqUYI-m1Lr6XBGjzmu_I-asGUH1no9NQ3PkF3tT-IrUaAqhLEALw_wcB&gclsrc=aw.ds' target='_blank'><button>RESERVE<IoIosArrowForward /></button>
+                    </a>
                     
                 </div>
             </div>

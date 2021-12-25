@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap");
+
+.Contact {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5vw;
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+}
+
+.background-stripe {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 5vw;
+  background-color: red;
+}
+
+.image-mail {
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+  right: 10vw;
+  top: 25vh;
+}
+
+.contact__title {
+  margin-top: 5vh;
+  color: #fd6363;
+  font-size: 4.5em;
+  text-align: center;
+}
+
+.Contact > h2 {
+  align-self: flex-start;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  color: #fd6363;
+}
+
+.Contact > h2 div {
+  width: 5vh;
+  height: 5px;
+  background-color: #fd6363;
+  margin-right: 5vh;
+}
+.contact__details h3 {
+  margin: 30px 0 10px 0;
+  color: #fd6363;
+  font-family: "Miniver", cursive;
+}
+
+.contact__details {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  padding-bottom: 50px;
+}
+
+.contact__details a {
+  color: black;
+  text-decoration: none;
+}
+
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fd6363;
+  background-color: white;
+  padding: 30px;
+
+  border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.Contact form > img {
+  height: 100px;
+  width: 100px;
+}
+
+.Contact form > div:nth-child(2) {
+  display: flex;
+}
+
+::placeholder {
+  color: grey;
+}
+
+form .form_input-label {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+form > label {
+  color: black;
+}
+
+form input {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  line-height: 2em;
+  padding: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+form button {
+  background: #fd6363;
+  color: white;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 25px 35px;
+}
+
+form button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+form textarea {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+  margin-top: 5px;
+  padding: 10px;
+}

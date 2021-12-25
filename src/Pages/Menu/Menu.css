@@ -42,12 +42,6 @@
   text-decoration: underline;
 }
 
-/* .Menu > div div:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .Menu img {
   max-width: 30vw;
   max-height: 40vh;

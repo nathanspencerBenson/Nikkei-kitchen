@@ -9,6 +9,7 @@ import Nav from './Nav/Nav';
 import Menu from './Pages/Menu/Menu';
 import Home from './Pages/Home/Home';
 import Footer from './Footer/Footer';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
                 <Menu />
               </Route>
               <Route path="/contact">
-                contact
+                <Contact />
               </Route>
               <Route path="/reserve">
                 reserve
