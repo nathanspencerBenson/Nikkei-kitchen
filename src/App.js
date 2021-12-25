@@ -10,6 +10,7 @@ import Menu from './Pages/Menu/Menu';
 import Home from './Pages/Home/Home';
 import Footer from './Footer/Footer';
 import Contact from './Pages/Contact/Contact';
+import Delivery from './Pages/Delivery/Delivery';
 
 function App() {
   return (
@@ -28,10 +29,9 @@ function App() {
                 <Contact />
               </Route>
               <Route path="/reserve">
-                reserve
               </Route>
               <Route path="/delivery">
-                delivery
+                <Delivery />
               </Route>
             </Switch>
             <Footer />
